@@ -24,7 +24,7 @@ import time
 def logtime():
 	return time.strftime('%D %H:%M:%S')
 
-def proxymailto(ip,port,mailfrom,rcpttos,data,peer):
+def proxymailto(ip,port,mailfrom,rcpttos,data):
 
 	print '%s Relay mail to %s:%s' % (logtime(),ip, port)
 
