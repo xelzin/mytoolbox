@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-# SMTP relay proxy to multiple SMTP servers
-# Warning no queueing implemented mail might get lost
+# SMTP dual delivery relay (proxy) 
+# Warning no queueing implemented mail might get lost if one of the proxyto servers is not handling the mail correctly.
+# 2014 bkram
+
 # Set variables below
 
 # Listen on this ip and port
