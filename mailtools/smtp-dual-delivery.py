@@ -5,13 +5,13 @@
 
 # Listen on this ip and port
 bindip = '127.0.0.1'
-bindport = 2025
+bindport = 25
 
 # Proxy to these SMTP servers
-proxytoip_a ='127.0.0.1'
-proxytoport_a='1025'
+proxytoip_a ='smtp.mydomain.tld'
+proxytoport_a='25'
 
-proxytoip_b ='smtp.ziggo.nl'
+proxytoip_b ='smtp.otherdomain.tld'
 proxytoport_b='25'
 
 import asyncore
