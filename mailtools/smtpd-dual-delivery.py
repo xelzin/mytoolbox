@@ -29,7 +29,7 @@ def logtime():
     return time.strftime('%D %H:%M:%S')
 
 def getmesid(data):
-    mailbody=email.message_from_string(data)
+    mailbody = email.message_from_string(data)
     return mailbody['Message-Id']
 
 def deliverto(ip, port, mailfrom, rcpttos, data,messageid):
