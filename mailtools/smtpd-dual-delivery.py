@@ -37,15 +37,15 @@ def deliverto(ip, port, mailfrom, rcpttos, data,messageid):
     try:
         sendserver = smtplib.SMTP(ip, port)
     except:
-        return '%s %s Error: could not open connection to %s:%s' % (logtime(), messageid, ip, port)
+        return 'Error: could not open connection to %s:%s' % (ip, port)
     try:
         sendserver.sendmail(mailfrom, rcpttos, data)
     except:
-        return "%s %s Error: could not relay message to server %s:%s" % (logtime(), messageid, ip, port)
+        return "Error: could not relay message to server %s:%s" % (ip, port)
     try:
         sendserver.quit()
     except:
-        return "%s %s Error: could not close connection to server %s:%s" % (logtime(), messageid, ip, port)
+        return "Error: could not close connection to server %s:%s" % (ip, port)
     return 'Message relayed to %s:%s' % (ip, port)
 
 class CustomSMTPServer(smtpd.SMTPServer):
