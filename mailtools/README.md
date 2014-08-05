@@ -2,11 +2,15 @@ smtpd-dual-delivery.py
 =====
 SMTP dual delivery relay (proxy) daemon
 
-smtpd-snooping-delivery.py
+smtpd-snoop-delivery.py
 =====
 SMTP relay (proxy) daemon with the ability to save all passing email into eml files, quite useful for debugging or snooping :)
 
-Warning no queueing is implemented mail might get lost if one of the receiving servers is not handling the mail correctly.
+
+Warning
+=====
+
+No queueing is implemented mail might get lost if one of the receiving servers is not handling the mail correctly.
 
 No warranty whatsoever.
 
