@@ -2,7 +2,7 @@
 # SMTP snooping relay proxy daemon
 # Warning no queueing implemented mail might get lost if one of the receiving servers is not handling the mail correctly.
 # No Warranty whatsoever
-# (c) 2014 bkram
+# (c) 2014 bkraM
 
 import asyncore
 import ConfigParser
